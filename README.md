@@ -7,4 +7,17 @@ level1-2: I had to lookup on the internet on how to view a hyphenated file which
 level2-3: I had to read up on how to use commands when the filename has spaces.
         password:UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
 level3-4:fire i used cd to enter the inhere directory and then used the ls -la command to know the filenames of the         hidden files.
-password:pIwrPrtPN36QITSp3EQaw936yaFoFgAB      
+password:pIwrPrtPN36QITSp3EQaw936yaFoFgAB    
+Level 4-5:
+
+        koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+level 5-6:
+
+
+        DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+level 6-7:
+
+
+        HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+
