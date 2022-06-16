@@ -1,7 +1,7 @@
 # ssh bandit0@bandit.labs.overthewire.org -p 2220
 ls- al to show all the files.\
 cat readme to read the contents of the file\
-boJ9jbbUNNfktd78OOpsqOltutMc3MY1\
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 
 # ssh bandit1@bandit.labs.overthewire.org -p 2220
 ls -al ls- al to show all the files.\
@@ -12,7 +12,7 @@ CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
 # ssh bandit2@bandit.labs.overthewire.org -p 2220
 ls -al\
 cat "spaces in this filename"\
-UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK\
+UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
 
 # ssh bandit3@bandit.labs.overthewire.org -p 2220
 ls -al\
@@ -37,7 +37,7 @@ cd inhere/\
 find . -type f -size 1033c\
 The result was ./maybehere07/.file2\
 cat ./maybehere07/.file2\
-DXjZPULLxYr17uwoI01bNLQbtFemEgo7\
+DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 
 # ssh bandit6@bandit.labs.overthewire.org -p 2220
 The password for the next level is stored somewhere on the server and has all of the following properties:owned by user bandit7,owned by group bandit6,33 bytes in size\
