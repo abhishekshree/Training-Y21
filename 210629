@@ -1,0 +1,114 @@
+level 0
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+then password then ls to see files then cat to view contents
+LEVEL 1
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+ls -a to list all files
+cat ./- to view content
+
+LEVEL 2
+ssh bandit3@bandit.labs.overthewire.org -p 2220
+put the file name in "file name" to cat it
+
+LEVEL 3
+ssh bandit3@bandit.labs.overthewire.org -p 2220
+ls -a to see hidden files then cd inhere/ then realpath . then cat .hidden to see password
+
+LEVEL 4
+ssh bandit4@bandit.labs.overthewire.org -p 2220
+then ls then file ./* to see types of all the files then cat ./-file07 to see password as it was ascii text type file
+
+LEVEL 5
+only new step is find -size 1033c(for bytes) -readable(to check for readability) ! -executable to check not executability
+then cat the corresponding file i.e. >/maybehere07/.file02
+
+LEVEL 6
+ only new step is find -size 33c -user bandit7 -group bandit6
+ -user for user type -group for group type
+ then cat ./var/lib/dpkg/info/bandit07.password
+ 
+ 
+ LEVEL 7
+
+ ls then cat data.txt then grep "millionth" data.txt to get that line of text.
+ 
+ 
+ LEVEL 8
+ sort data.txt | uniq -u to first sort and then get unique line repayed only once
+ 
+ LEVEL 9
+ string data.txt | grep "=" to grep = following strings and then 3 human readable lines were there  
+
+LEVEL 10
+used base to see if base64 is there and then base64 -d data.txt to decode it.
+
+LEVEL 11
+used cat data.txt to get the coded password and then used cyberchef rot13 to decode it.
+
+LEVEL 12
+mkdir  /tmp/alexisss
+cp data.txt /tmp/alexisss
+xxd -r data.txt > data
+mv data file.gz
+gzip -d file.gz
+mv file file.bz
+bzip2 -d file.bz2
+
+LEVEL 13
+ssh -i sshkey.private bandit14@localhost
+
+LEVEL 14
+
+
+ 
+ cat /etc/bandit_pass/bandit14
+
+
+ level 15
+
+ 
+ cat /etc/bandit_pass/bandit15
+ ncat | grep ssl localhost 300001
+
+
+ level 16
+ 
+ cluFn7wTiGryunymYOu4RcffSxQluehd
+nmap -A localhost -p 31000-320000
+openssl s_client -connect localhost:31790
+mkdir /tmp/mumu_ni
+cd /tmp/mumu_ni
+nano abc.private
+chmod 600 /tmp/bandit17.key
+ssh bandit17@localhost -i /tmp/bandit17.key
+then connected to level 17 without any password
+
+
+ level 17
+ ssh bandit17@bandit.labs.overthewire.org -p 2220
+
+diff passwords.old passwords.new
+
+
+ level 18
+ 
+ gives massage ====Byebye !
+ Connection to localhost closed.
+ ssh bandit18@bandit.labs.overthewire.org -p 2220 cat read me to get password of level 19
+
+
+ level 19
+ 
+./bandit20-do cat /etc/bandit_pass/bandit20
+
+
+ level 20
+ 
+ cat /etc/bandit_pass/bandit20
+
+ 
+ 
+ 
+ 
+ 
+ 
