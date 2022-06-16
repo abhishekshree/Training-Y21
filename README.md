@@ -2,12 +2,12 @@
 ### level 0
 ssh -p2220 bandit0@bandit.labs.overthewire.org
 ### level 1
-ssh -p2220 bandit1@bandit.labs.overthewire.org
+ssh -p2220 bandit1@bandit.labs.overthewire.org\n
 password:boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 ### level 2
-ls
-cat ./-
-CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+ls\n
+cat ./- \n
+CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9 \n
 ### level 3
 ls
 cat "spaces in this filename"
