@@ -114,73 +114,73 @@ ssh bandit12@bandit.labs.overthewire.org -p 2220
 
 # level 13
 
-ls
-mkdir /tmp/myname2091
-cp data.txt /tmp/myname2091
-cd /tmp/myname2091
-xxd -r data.txt finaldata
-file finaldata
-mv finaldata data.gz
-gzip -d data.gz
-file data
-mv data data.bz2
-bzip2 -d data.bz2
-file data
-mv data data.gz
-gzip -d data.gz
-file data
-mv data data.tar
-tar xvf data.tar
-file data5.bin
-mv data5.bin data5.tar
-tar xvf data5.tar
-file data6.bin
-mv data6.bin data6.tar
-tar xvf data6.tar
-file data8.bin
-mv data8.bin data8.gz
-gzip -d data8.gz
-file data8
-cat data8
-rm -rf /tmp/myname2091
-ssh bandit13@bandit.labs.overthewire.org -p 2220
+ls       
+mkdir /tmp/myname2091        
+cp data.txt /tmp/myname2091         
+cd /tmp/myname2091         
+xxd -r data.txt finaldata         
+file finaldata           
+mv finaldata data.gz         
+gzip -d data.gz       
+file data    
+mv data data.bz2           
+bzip2 -d data.bz2      
+file data            
+mv data data.gz        
+gzip -d data.gz        
+file data          
+mv data data.tar         
+tar xvf data.tar        
+file data5.bin              
+mv data5.bin data5.tar        
+tar xvf data5.tar          
+file data6.bin          
+mv data6.bin data6.tar            
+tar xvf data6.tar            
+file data8.bin            
+mv data8.bin data8.gz            
+gzip -d data8.gz             
+file data8            
+cat data8           
+rm -rf /tmp/myname2091                               
+ssh bandit13@bandit.labs.overthewire.org -p 2220         
 
 # level 13
-ls
-ssh -i sshkey.private bandit14@localhost
-ssh bandit14@bandit.labs.overthewire.org -p 2220
+ls                                         
+ssh -i sshkey.private bandit14@localhost              
+ssh bandit14@bandit.labs.overthewire.org -p 2220          
 
 
 # level 14
-ls
-cat /etc/bandit_pass/bandit14
-telnet localhost 30000
-ssh bandit15@bandit.labs.overthewire.org -p 2220
-
+ls                                 
+cat /etc/bandit_pass/bandit14         
+telnet localhost 30000             
+ssh bandit15@bandit.labs.overthewire.org -p 2220                     
+ 
 # level 15
-cat /etc/bandit_pass/bandit15    
-openssl s_client -connect localhost:30001     
-ssh bandit16@bandit.labs.overthewire.org -p 2220
+cat /etc/bandit_pass/bandit15                
+openssl s_client -connect localhost:30001              
+ssh bandit16@bandit.labs.overthewire.org -p 2220            
 
 # level 16
 
-cat /etc/bandit_pass/bandit16    
+cat /etc/bandit_pass/bandit16         
 openssl s_client --connect localhost:31790    
-ssh bandit17@bandit.labs.overthewire.org -p 2220     
+ssh bandit17@bandit.labs.overthewire.org -p 2220      
 
 # level 17
-ls
-diff passwords.old passwords.new
-42c42
-ssh bandit18@bandit.labs.overthewire.org -p 2220
+ls                                  
+diff passwords.old passwords.new           
+42c42                                                 
+ssh bandit18@bandit.labs.overthewire.org -p 2220              
 
 
 # level 18
-ssh -t bandit18@localhost cat readme
+ssh -t bandit18@localhost cat readme             
 
 # level 19
 
-./bandit20-do cat /etc/bandit_pass/bandit20
+./bandit20-do cat /etc/bandit_pass/bandit20              
 
-# level 20
-./suconnect 1234
+# level 20 
+./suconnect 1234            
