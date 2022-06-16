@@ -1,3 +1,6 @@
+Name - Priyanshi Dwivedi
+Roll Number - 210898
+
 ssh bandit0@bandit.labs.overthewire.org -p 2220 (connecting to user bandit0 at port 2220)
 
 Bandit 0-
