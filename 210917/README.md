@@ -77,3 +77,85 @@ cat data.txt | tr '[A-Za-z]' '[N-ZA-Mn-za-m]'       //replaces every letter by t
 
 # ssh bandit12@bandit.labs.overthewire.org -p 2220
 The password for the next level was stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed.
+mkdir /tmp/myname
+cp data.txt /tmp/myname
+cd /tmp/myname
+xxd -r data.txt finaldata
+file finaldata
+mv finaldata data.gz
+gzip -d data.gz
+file data
+mv data data.bz2
+bzip2 -d data.bz2
+file data
+mv data data.gz
+gzip -d data.gz
+file data
+mv data data.tar
+tar xvf data.ta
+file data5.bin
+mv data5.bin data5.tar
+tar xvf data5.tar
+file data6.bin
+mv data6.bin data6.tar
+tar xvf data6.tar
+file data8.bin
+mv data8.bin data8.gz
+gzip -d data8.gz
+file data8
+cat data8
+rm -rf /tmp/myname
+8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+
+# ssh bandit13@bandit.labs.overthewire.org -p 2220
+ls
+ssh -i sshkey.private bandit14@localhost
+I read file bandit14 which gave 
+4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+
+# ssh bandit14@bandit.labs.overthewire.org -p 2220
+nc localhost 30000
+4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+
+The password received was
+BfMYroe26WYalil77FoDi9qh59eK5xNr
+
+# ssh bandit15@bandit.labs.overthewire.org -p 2220
+openssl s_client -ign_eof -connect localhost:30001
+BfMYroe26WYalil77FoDi9qh59eK5xNr
+
+The password received was
+cluFn7wTiGryunymYOu4RcffSxQluehd
+
+# ssh bandit16@bandit.labs.overthewire.org -p 2220
+nmap -v -A -T4 -p 31000-32000 localhost
+openssl s_client -connect localhost:31790
+cluFn7wTiGryunymYOu4RcffSxQluehd
+mkdir -p /tmp/bandit17
+chmod 600 bandit17.key
+ssh -i bandit17.key bandit17@localhost
+ls
+diff passwords.new passwords.old
+cd  /etc/bandit_pass folder
+cat bandit17
+
+The password received was
+xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn
+
+# ssh bandit17@bandit.labs.overthewire.org -p 2220
+diff password.new passwords.old
+kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+
+# ssh bandit18@bandit.labs.overthewire.org -p 2220
+ls
+cat readme
+IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+
+# ssh bandit19@bandit.labs.overthewire.org -p 2220
+./bandit20-do cat /etc/bandit_pass/bandit20
+GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+
+# ssh bandit20@bandit.labs.overthewire.org -p 2220
+nc -l 1234 < /etc/bandit_pass/bandit20
+./suconnect 1234
+gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
