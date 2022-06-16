@@ -158,15 +158,15 @@ telnet localhost 30000
 ssh bandit15@bandit.labs.overthewire.org -p 2220
 
 # level 15
-cat /etc/bandit_pass/bandit15
-openssl s_client -connect localhost:30001
+cat /etc/bandit_pass/bandit15    
+openssl s_client -connect localhost:30001     
 ssh bandit16@bandit.labs.overthewire.org -p 2220
 
 # level 16
 
-cat /etc/bandit_pass/bandit16
-openssl s_client --connect localhost:31790
-ssh bandit17@bandit.labs.overthewire.org -p 2220
+cat /etc/bandit_pass/bandit16    
+openssl s_client --connect localhost:31790    
+ssh bandit17@bandit.labs.overthewire.org -p 2220     
 
 # level 17
 ls
