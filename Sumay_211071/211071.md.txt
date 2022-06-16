@@ -1,0 +1,62 @@
+Level 0 : I used the ssh commond, to log into the over the wire game server.
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+bandit.... denotes the server name, and p denotes portal. 2220 denotes the portal number.
+
+level 0 - 1 : It was given we had to use the readme command, to obtain password for level 1.
+The suggested commands were given is, cd and cat. I searched on the net to use the cat command, and used it to obtain password for next level
+
+level 1 - 2 : It was given we had to use a file named - in the home directory. I tried using cat -, but it was giving an error, as - has a special meaning
+I searched the net to find that to use - in such a way, we had to use ./  Now, i used ./- to obtain password for next level.
+
+level 2 - 3 : It was given we had to use a file name called spaces in filename. I used the cat command similar to the above steps, putting spaces in filename in double quotes.
+This gave us the password for next level.
+
+level 3 - 4 : It was given that the next password is in a hidden file in the inhere directory. I tried using cat inhere, but it did not work.
+I searched on the net to check that we need to use the cd command to get inside the inhere directory. Then I used the ls -la to list out the files under the inhere directory.
+Here we saw the file .hidden, where i extracted the password using the cat ".hidden" command
+
+level 4 - 5 : It was given we had to use a readable file in the inhere directory. After using the cd command to get into the inhere directory, I used the ls -la command to list out all the files in the directory.
+I then searched on the net to see that the file command is used to return the data type of the files present.
+I searched on the net to see that the file ./-* is used to print the data type of all files present.
+The -file07 was the only one with ascii text. So I used the cat command to return the password to proceed.
+
+level 5 - 6 : It was given we had to use a non executable file in the inhere directory, which is of size 1033 bytes. I searched on the net on how to use the find function. I used the find -size 1033 command to return the location of the file, which was in the maybehere 7 directory, fiele 2.I entered that directory, and used cat file 2, to get the password.
+
+level 6 - 7 : It was given we had to find a file, which was by user xyz, and group abc. I used the find -user xyz -group abc command (Saw this on the net)
+This returned a list of various files in each directory. All the files returned permission denied, or no such directory. There was only one such file which was accessible, so i used cat <adress> to get the password.
+
+Level 7 - 8 : It was given we had to find the password in the data.txt file, next to the word millionth.
+I searched the net to find that awk is used to print the text in a file. After some unexpected errors, I asked a friend, who prescribed a certain format to rpint the text next to the word millionth. This got me the next password.
+
+Level 8 - 9 : It was given the password is stored in data.txt and occurs only once in the entiure file. I searched on the net how to obtain a unique string, and found the uniq command.
+I used the cat command, with data.txt | uniq-u to obtain the next password.
+
+Level 9 - 10 : It was given that the password is stored in the data.txt file, and is preceeded ny several = signs. I searched on the net to see that the strings command is used to return the string characters into files. It primarily focuses on determining the contents of and extracting text from the binary files (non-text file) (GeeksforGeeks).
+Then I searched that the grep function is used to check whether any text line has a particular word in it or not. This gave me several lines of output, one of which was the passwrod.
+
+Level 10 - 11 : It was given that the password is stored in data.txt file, and is encoded in base 64 text. Upon searching the net on how to decode base 64 data into decimal data, the base64 -d<xyz> command was known.
+It directly converts the text in xyz file to the decimal system. This gave a result of This password is IF....
+
+Level 11 - 12 : It was given that the password is stored in data.txt file, and each character is shifted by 13 places to the right.
+Upon searching on the net about the tr command, and seeing a video on how it worked, I used the  | tr [a-zA-Z] [n-za-mN-ZA-M] to output the sentence in the data.txt file
+
+Level 12 - 13 : This question, I could not do it on my own. I saw the video given by Abhishek on the discord server.
+
+Level 13 - 14 : In this question, we were given that the ssh key is private, and only that can be used to log into the next level.
+I used the command ssh -i sshkey.private bandit14@machine_name, where machine_name is the local machine name. It confirms once whether we want to continue with this operation.
+Once we are inside the bandit14@..., we can just use the cat operator, and put the adress of the file.
+cat /etc/bandit_pass/bandit14
+
+Level 14 - 15 : In this question, we obtain the password for the next level by sumbitting the previous password to a another port on the local host.
+We use the telnet function for this. The telnet function is used to transfer information from one remote server to another.
+After the connection was established, we enter the password, which if correct, will return the password of the next level
+
+Level 15 - 16 : I could not do this question. I just saw the solution video of this level, and typed the password of this to the next level.
+
+Level 16 - 17 : I could not do this question as well. I just saw the solution of this level, and typed the password of this to the next level.
+
+Level 17 - 18 : I searched the net, and found the diff command. I used the line diff passwords.new passwords.old to find the difference between the text files in the passwords.new and passwords.old
+The output consists of num1 * num2, where num1 is a line in the first file, num2 is a line in the 2nd file, and * is a character which depends upon the difference between the two files. One case of *is c, which denotes that line num1 in first file should be changed to num2 in the second file, to get both the files matching.
+The first output printed will be the password, as it is preceeded by the < symbol.
+ 
+
