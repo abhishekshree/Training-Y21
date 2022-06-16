@@ -53,9 +53,31 @@ koReBOKuIDDepwhWk7jZC0RTdopnAYKh
  cat data.txt
  IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
  ### level 11-12
- is
+ ls
  cat data.txt
  cat data.txt | tr a-zA-Z n-za-mN-ZA-M
  5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+ ### level 12-13
+ ### level 13-14
+ ls
+ ssh -i sshkey.private bandit14@localhost -p 2220
+ cat /etc/bandit_pss/bandit14
+ ### level 14-15
+ nc localhost30000
+ ### level 15-16
+ openssl s_client -ign_eof -connect localhost:30001
+ ### level 16-17
+ ### level 17-18
+ ls
+ diff passwords.new password.old
+ ### level 18-19
+ ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
+bandit18@bandit.labs.overthewire.org's password:
+### level 19-20
+ls
+./bandit20-do cat /etc/bandit_pass/bandit20
+ 
+ 
+ 
  
  
