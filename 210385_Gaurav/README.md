@@ -27,7 +27,9 @@ Level 15-17:
 Telenet = used for communicating with another host using the TELNET protocol.
 Openssl = used to connect as the client using the hostname localhost at a given port. (in parameters like s_client)
 nano = used to create private keys. (in bandit17)
-chmod = used to change file permissions.         Diff = used to find passwords.
+chmod = used to change file permissions.        
+Diff = used to find passwords.
+
 level 0-1:
 bandit0@bandit:~$ ls
 readme
