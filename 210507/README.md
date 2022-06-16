@@ -19,7 +19,7 @@
 ### level 2
 
 # ls -la
-# cat spaces\ in \this\ filename
+# cat spaces\ in\ this\ filename
 # logout
 # ssh bandit3@bandit.labs.overthewire.org -p 2220
 
@@ -48,5 +48,17 @@
 ### level 5
 
 # ls -la
+# find -type f -size 1033c
+# cat ./maybehere07/.file2
+# logout
+# ssh bandit6@bandit.labs.overthewire.org -p 2220
 
+### level 6 
+
+# ls -la
+# find -user bandit7 -size 33c
+# logout
+# ssh bandit7@bandit.labs.overthewire.org -p 2220
+
+### level 7 
 
