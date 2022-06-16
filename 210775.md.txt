@@ -1,0 +1,258 @@
+Firstly, installed ubuntu and setup wsl.
+# Bandit Levels 
+
+&& level 0
+
+& ssh bandit0@bandit.labs.overthewire.org -p2220
+& bandit0
+& ls
+& cat readme
+& boJ9jbbUNNfktd78OOpsqOltutMc3MY1 //obtained
+& exit
+
+- connected to bandit surver using ssh command
+- found passward for the first level in readme file
+
+&& level 1
+
+& ssh bandit1@bandit.labs.overthewire.org -p2220
+& boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+& ls
+& ls -la
+& cat ./-
+& CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9 //obtained
+exit
+&& level 2
+
+& ssh bandit2@bandit.labs.overthewire.org -p2220
+& CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+& ls 
+& cat "spaces in this filename"
+& UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK //obtained
+& exit
+&& level 3
+ 
+& ssh bandit3@bandit.labs.overthewire.org -p2220
+& UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+& ls
+& cat inhere
+& cd inhere
+& ls
+& ls -la
+& cat ./.hidden
+& pIwrPrtPN36QITSp3EQaw936yaFoFgAB //obtained
+& exit
+
+&& level 4
+
+& ssh bandit4@bandit.labs.overthewire.org -p2220
+& pIwrPrtPN36QITSp3EQaw936yaFoFgAB obtained
+& ls
+& cat inhere
+& cd inhere
+& ls
+& find . -type f | xargs file
+& cat ./-file07
+& koReBOKuIDDepwhWk7jZC0RTdopnAYKh //obtained
+& exit
+&& level 5
+
+& ssh bandit5@bandit.labs.overthewire.org -p2220
+& koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+& ls
+& cd inhere
+& ls
+& find . -type f -size 1033c
+& cat ./maybehere07/.file2
+& DXjZPULLxYr17uwoI01bNLQbtFemEgo7 //obtained
+# exit 
+&& level 6
+& ssh bandit6@bandit.labs.overthewire.org -p2220
+& DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+& ls
+& find / -type f -user bandit7 -group bandit6 -size 33c
+& cat /var/lib/dpkg/info/bandit7.password
+& HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs //obtained
+& exit
+&& level 7
+& ssh bandit7@bandit.labs.overthewire.org -p2220
+& HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+& ls
+& cat data.txt
+& strings data.txt | grep "millionth"
+& cvX2JJa4CFALtqS87jk27qwqGhBM9plV //obtained
+& exit
+&& level 8
+& ssh bandit8@bandit.labs.overthewire.org -p2220
+& cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+& ls
+& cat data.txt
+& sort data.txt | uniq -c
+& UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR //obtained
+& exit
+&& level 9
+& ssh bandit9@bandit.labs.overthewire.org -p2220
+& UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+& ls
+& cat data.txt
+& strings data.txt | grep "="
+& truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk //obtained
+& exit
+&& level 10
+& ssh bandit10@bandit.labs.overthewire.org -p2220
+& truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+& ls
+& cat data.txt
+& base64 -d data.txt
+& IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR //obtained
+& exit
+&& level 11
+& ssh bandit11@bandit.labs.overthewire.org -p2220
+& IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+& ls
+& cat data.txt
+& tr 'A-Za-z' 'N-ZA-Mn-za-m' <<< "Gur cnffjbeq vf 5Gr8L4qetPEsPk8htqjhRK8XSP6x2RHh"
+& 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+& exit
+&& level 12
+
+& ls -la
+& cat data.txt
+& mkdir /tmp/build
+& cp data.txt /tmp/build/new.txt
+& cd /tmp/build
+& xxd -r new.txt > new1
+& ls 
+& mv new1 new1.gz
+& gzip -d new1.gz
+& ls
+& file new1
+& mv new1 new1.bz2
+& bzip2 -d new1.bz2
+& file new1
+& mv new1 new1.gz
+& gzip -d new1.gz
+& file new1
+& mv new1 new1.tar
+& tar xf new1.tar
+& ls
+& file new5.bin
+& rm new1.tar
+& rm new.txt
+& ls
+& file new5.bin
+& mv new5.bin new.tar
+& tar xf new.tar
+& ls
+& file new6.bin
+& mv data6.bin new.bz2
+& bzip2 -d new.bz2
+& ls
+& file new
+& mv new2 new.tar
+& tar xf new.tar
+& ls
+& file new8.bin
+& mv new8.bin new.gz
+& gzip -d new.gz
+& ls
+& file new
+& cat new
+& exit
+& ssh bandit13@bandit.labs.overthewire.org -p2220
+& 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+&& level 13
+& ssh bandit13@bandit.labs.overthewire.org -p2220
+& 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+& ls
+& ssh -i sshkey.private bandit14@localhost
+& yes
+& cat /etc/bandit_pass/bandit14
+& 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e obtained
+
+&& level 14
+& ssh bandit14@bandit.labs.overthewire.org -p2220
+& 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+& nc localhost 30000
+& 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+& BfMYroe26WYalil77FoDi9qh59eK5xNr obtained
+& exit
+&& level 15
+& ssh bandit15@bandit.labs.overthewire.org -p2220
+& BfMYroe26WYalil77FoDi9qh59eK5xNr
+& cat /etc/bandit_pass/bandit15
+& ncat --ssl localhost 30001
+& BfMYroe26WYalil77FoDi9qh59eK5xNr
+& cluFn7wTiGryunymYOu4RcffSxQluehd obtained
+& exit
+&& level 16
+& ssh bandit16@bandit.labs.overthewire.org -p2220
+& cluFn7wTiGryunymYOu4RcffSxQluehd
+& nmap localhost -p 31000-32000
+& ncat --ssl localhost 31790
+& cluFn7wTiGryunymYOu4RcffSxQluehd
+& exit
+& vim pass
+& MIIEogIBAAKCAQEAvmOkuifmMg6HL2YPIOjon6iWfbp7c3jx34YkYWqUH57SUdyJ
+imZzeyGC0gtZPGujUSxiJSWI/oTqexh+cAMTSMlOJf7+BrJObArnxd9Y7YT2bRPQ
+Ja6Lzb558YW3FZl87ORiO+rW4LCDCNd2lUvLE/GL2GWyuKN0K5iCd5TbtJzEkQTu
+DSt2mcNn4rhAL+JFr56o4T6z8WWAW18BR6yGrMq7Q/kALHYW3OekePQAzL0VUYbW
+JGTi65CxbCnzc/w4+mqQyvmzpWtMAzJTzAzQxNbkR2MBGySxDLrjg0LWN6sK7wNX
+x0YVztz/zbIkPjfkU1jHS+9EbVNj+D1XFOJuaQIDAQABAoIBABagpxpM1aoLWfvD
+KHcj10nqcoBc4oE11aFYQwik7xfW+24pRNuDE6SFthOar69jp5RlLwD1NhPx3iBl
+J9nOM8OJ0VToum43UOS8YxF8WwhXriYGnc1sskbwpXOUDc9uX4+UESzH22P29ovd
+d8WErY0gPxun8pbJLmxkAtWNhpMvfe0050vk9TL5wqbu9AlbssgTcCXkMQnPw9nC
+YNN6DDP2lbcBrvgT9YCNL6C+ZKufD52yOQ9qOkwFTEQpjtF4uNtJom+asvlpmS8A
+vLY9r60wYSvmZhNqBUrj7lyCtXMIu1kkd4w7F77k+DjHoAXyxcUp1DGL51sOmama
++TOWWgECgYEA8JtPxP0GRJ+IQkX262jM3dEIkza8ky5moIwUqYdsx0NxHgRRhORT
+8c8hAuRBb2G82so8vUHk/fur85OEfc9TncnCY2crpoqsghifKLxrLgtT+qDpfZnx
+SatLdt8GfQ85yA7hnWWJ2MxF3NaeSDm75Lsm+tBbAiyc9P2jGRNtMSkCgYEAypHd
+HCctNi/FwjulhttFx/rHYKhLidZDFYeiE/v45bN4yFm8x7R/b0iE7KaszX+Exdvt
+SghaTdcG0Knyw1bpJVyusavPzpaJMjdJ6tcFhVAbAjm7enCIvGCSx+X3l5SiWg0A
+R57hJglezIiVjv3aGwHwvlZvtszK6zV6oXFAu0ECgYAbjo46T4hyP5tJi93V5HDi
+Ttiek7xRVxUl+iU7rWkGAXFpMLFteQEsRr7PJ/lemmEY5eTDAFMLy9FL2m9oQWCg
+R8VdwSk8r9FGLS+9aKcV5PI/WEKlwgXinB3OhYimtiG2Cg5JCqIZFHxD6MjEGOiu
+L8ktHMPvodBwNsSBULpG0QKBgBAplTfC1HOnWiMGOU3KPwYWt0O6CdTkmJOmL8Ni
+blh9elyZ9FsGxsgtRBXRsqXuz7wtsQAgLHxbdLq/ZJQ7YfzOKU4ZxEnabvXnvWkU
+YOdjHdSOoKvDQNWu6ucyLRAWFuISeXw9a/9p7ftpxm0TSgyvmfLF2MIAEwyzRqaM
+77pBAoGAMmjmIJdjp+Ez8duyn3ieo36yrttF5NSsJLAbxFpdlc1gvtGCWW+9Cq0b
+dxviW8+TFVEBl1O4f7HVm6EpTscdDxU+bCXWkfjuRb7Dy9GOtt9JPsX8MBTakzh3
+vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
+& chmod 400 pass
+& ssh -i pass bandit17@bandit.labs.overthewire.org -p2220
+
+
+&& level 17
+& diff passwords.old passwords.new
+& exit
+& ssh -i pass bandit18@bandit.labs.overthewire.org -p2220
+& kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+
+&& level 18
+& ssh -t bandit18@bandit.labs.overthewire.org -p2220
+& /bin/sh
+& ls
+& cat readme
+& exit
+& ssh bandit19@bandit.labs.overthewire.org -p2220
+& IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+
+&& level 19
+
+& ls
+& ./bandit20-do cat /etc/bandit_pass/bandit20
+& exit 
+& ssh bandit20@bandit.labs.overthewire.org -p2220
+& GbKksEFF4yrVs61155v6gwY5aVje5f0j
+
+&& level 20
+
+& ls
+& cat /etc/bandit_pass/bandit20
+& ssh bandit20@bandit.labs.overthewire.org -p2220
+& GbKksEFF4yrVs61155v6gwY5aVje5f0j
+& cat /etc/bandit_pass/bandit20 | nc -l localhost -p 1234
+& ./suconnect 1234
+& exit
+& ssh bandit21@bandit.labs.overthewire.org -p2220
+& gE269g2h3mw3pwgrjoHa9Uoqen1c9DGr
