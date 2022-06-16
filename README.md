@@ -144,6 +144,28 @@ xxd -r data.txt ans    {i name it ans}
 > gzip -> gz named then gzip -d {file}
 > bzip2 -> bz2 named then bzip -d {file}
 > tar archive -> extract it -> tar named then tar -xf {file}
+mv ans ans.gz
+gzip -d ans.gz
+file ans
+mv ans ans.bz2
+bzip2 -d ans.bz2
+file ans
+mv ans ans.gz
+gzip -d ans.gz
+file ans
+mv ans ans.tar
+tar -xf ans.tar
+file data5.bin
+mv data5.bin data5.tar
+tar -xf data5.tar
+file data6.bin
+mv data6.bin data6.tar
+tar -xf data6.tar
+file data8.bin
+mv data8.bin data8.gz
+gzip -d data8.gz
+file data8
+cat data8
 >we finally retrieve the passcode for it
 */ password : 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL /*
 exit
