@@ -182,3 +182,68 @@ pass: 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
 pass: 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
 
 # Level 13
+1). Used private key to login as bandit14 =>
+    ssh -i sshkey.private bandit14@localhost
+
+2). Used cat to read the file =>
+    cat /etc/bandit_pass/bandit14  
+
+pass: 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+
+# Level 14
+1). Sent the data to the required port using =>
+    echo 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e | nc localhost 30000
+
+pass: BfMYroe26WYalil77FoDi9qh59eK5xNr
+
+# Level 15
+
+1). Connected to localhost 300001 using openssl =>
+    openssl s_clienet -connect localhost:30001
+
+2). Typed previous pass to get new pass =>
+    BfMYroe26WYalil77FoDi9qh59eK5xNr
+
+pass: cluFn7wTiGryunymYOu4RcffSxQluehd
+
+# Level 16
+1). Scanned all the ports using nmap =>
+    nmap -p 31000-32000 localhost
+
+2). Tried connecting to each of the scanned ports to find which one has echo enabled =>
+    openssl s_client -connect localhost:31790
+
+3). This gave a private key. Made a file in the tmp directory to store it =>
+    mkdir /tmp/key
+
+4). Moved into the directory and saved the key in sshkey.private file
+    cat > sshkey.private
+
+5). Changed the permission of key to not keep it open =>
+    chmod 600 sshkey.private
+
+6). Logged in as bandit17 using the private key =>
+    ssh -i sshkey.private bandit17@localhost
+
+# Level 17
+1). To find the differece between the files I used => grep -Fxvf passwords.old passwords.new
+
+pass: kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+
+# Level 18
+1). Logging in usually kicked me out so used -T option of the ssh command =>
+    ssh -T  bandit18@bandit.labs.overthewire.org -p 2220
+
+2). Read the file using cat => 
+    cat readme
+
+pass: IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+
+# Level 19
+1). To run the command us bandit20 i used the setuid binarry file =>
+    ./bandit20-do cat /etc/bandit_pass/bandit20
+
+pass: GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+
+
+
