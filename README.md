@@ -2,7 +2,7 @@
 ### level 0
 ssh -p2220 bandit0@bandit.labs.overthewire.org
 ### level 1
-ssh -p2220 bandit1@bandit.labs.overthewire.org\n
+ssh -p2220 bandit1@bandit.labs.overthewire.org \n
 password:boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 ### level 2
 ls\n
