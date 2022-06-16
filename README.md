@@ -18,4 +18,14 @@ cd inhere
 ls -la
 cat \.hidden
 pIwrPrtPN36QITSp3EQaw936yaFoFgAB
-### level 5
+### level 4-5
+ls
+cd inhere
+file ./-file07
+koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+### level 5-6
+ ls
+ cd inhere
+ ls
+ find -size 1033c -readable ! -executable
+ DXjZPULLxYr17uwoI01bNLQbtFemEgo7
