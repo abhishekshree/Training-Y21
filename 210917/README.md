@@ -1,86 +1,79 @@
 # ssh bandit0@bandit.labs.overthewire.org -p 2220
-bandit0@bandit:~$ ls -al
-total 24
-drwxr-xr-x  2 root    root    4096 May  7  2020 .
-drwxr-xr-x 41 root    root    4096 May  7  2020 ..
--rw-r--r--  1 root    root     220 May 15  2017 .bash_logout
--rw-r--r--  1 root    root    3526 May 15  2017 .bashrc
--rw-r--r--  1 root    root     675 May 15  2017 .profile
--rw-r-----  1 bandit1 bandit0   33 May  7  2020 readme
-bandit0@bandit:~$ cat readme
+ls- al to show all the files.
+cat readme to read the contents of the file
 boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 
-ssh bandit1@bandit.labs.overthewire.org -p 2220
-
-bandit1@bandit:~$ ls -al
-total 24
--rw-r-----  1 bandit2 bandit1   33 May  7  2020 -
-drwxr-xr-x  2 root    root    4096 May  7  2020 .
-drwxr-xr-x 41 root    root    4096 May  7  2020 ..
--rw-r--r--  1 root    root     220 May 15  2017 .bash_logout
--rw-r--r--  1 root    root    3526 May 15  2017 .bashrc
--rw-r--r--  1 root    root     675 May 15  2017 .profile
-bandit1@bandit:~$ cat ./-
+# ssh bandit1@bandit.labs.overthewire.org -p 2220
+ls -al ls- al to show all the files.
+The passowrd was in a file named -
+cat <-
 CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
-bandit1@bandit:~$ exit
-logout
-Connection to bandit.labs.overthewire.org closed.
 
-samyaks21@LAPTOP-F94QLELC:~$ ssh bandit2@bandit.labs.overthewire.org -p 2220
-bandit2@bandit:~$ ls
-spaces in this filename
-bandit2@bandit:~$ cat spaces\ in\ this\ filename
+# ssh bandit2@bandit.labs.overthewire.org -p 2220
+ls -al
+cat "spaces in this filename"
 UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
 
-bandit3@bandit:~$ ls -al
-total 24
-drwxr-xr-x  3 root root 4096 May  7  2020 .
-drwxr-xr-x 41 root root 4096 May  7  2020 ..
--rw-r--r--  1 root root  220 May 15  2017 .bash_logout
--rw-r--r--  1 root root 3526 May 15  2017 .bashrc
-drwxr-xr-x  2 root root 4096 May  7  2020 inhere
--rw-r--r--  1 root root  675 May 15  2017 .profile
-bandit3@bandit:~$ cd inhere/
-bandit3@bandit:~/inhere$ ls -al
-total 12
-drwxr-xr-x 2 root    root    4096 May  7  2020 .
-drwxr-xr-x 3 root    root    4096 May  7  2020 ..
--rw-r----- 1 bandit4 bandit3   33 May  7  2020 .hidden
-bandit3@bandit:~/inhere$ cat ./.hidden
+# ssh bandit3@bandit.labs.overthewire.org -p 2220
+ls -al
+The password is stored in a hidden file in the inhere directory.
+cd inhere/
+ls -al
+cat ./.hidden
 pIwrPrtPN36QITSp3EQaw936yaFoFgAB
 
-bandit4@bandit:~/inhere$ ls -al
-total 48
-drwxr-xr-x 2 root    root    4096 May  7  2020 .
-drwxr-xr-x 3 root    root    4096 May  7  2020 ..
--rw-r----- 1 bandit5 bandit4   33 May  7  2020 -file00
--rw-r----- 1 bandit5 bandit4   33 May  7  2020 -file01
--rw-r----- 1 bandit5 bandit4   33 May  7  2020 -file02
--rw-r----- 1 bandit5 bandit4   33 May  7  2020 -file03
--rw-r----- 1 bandit5 bandit4   33 May  7  2020 -file04
--rw-r----- 1 bandit5 bandit4   33 May  7  2020 -file05
--rw-r----- 1 bandit5 bandit4   33 May  7  2020 -file06
--rw-r----- 1 bandit5 bandit4   33 May  7  2020 -file07
--rw-r----- 1 bandit5 bandit4   33 May  7  2020 -file08
--rw-r----- 1 bandit5 bandit4   33 May  7  2020 -file09
-bandit4@bandit:~/inhere$ find . -type f | xargs file
-./-file01: data
-./-file00: data
-./-file06: data
-./-file03: data
-./-file05: data
-./-file08: data
-./-file04: data
-./-file07: ASCII text
-./-file02: data
-./-file09: data
-bandit4@bandit:~/inhere$ cat ./-file07
+# ssh bandit4@bandit.labs.overthewire.org -p 2220
+The password is stored in file inside the inhere folder, most of the files in the directory as written in binary and only one of them has human readable text.
+cd inhere/
+ls -al
+find . -type f | xargs file     //to show the files with the file type
+cat ./-file07       //file07 was ASCII text
 koReBOKuIDDepwhWk7jZC0RTdopnAYKh
 
-bandit5@bandit:~/inhere$ ls
-maybehere00  maybehere02  maybehere04  maybehere06  maybehere08  maybehere10  maybehere12  maybehere14  maybehere16  maybehere18
-maybehere01  maybehere03  maybehere05  maybehere07  maybehere09  maybehere11  maybehere13  maybehere15  maybehere17  maybehere19
-bandit5@bandit:~/inhere$ find . -type f -size 1033c
-./maybehere07/.file2
-bandit5@bandit:~/inhere$ cat ./maybehere07/.file2
+
+# ssh bandit5@bandit.labs.overthewire.org -p 2220
+The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:human-readable,1033 bytes in size,not executable
+cd inhere/
+find . -type f -size 1033c 
+The result was ./maybehere07/.file2
+cat ./maybehere07/.file2
 DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+# ssh bandit6@bandit.labs.overthewire.org -p 2220
+The password for the next level is stored somewhere on the server and has all of the following properties:owned by user bandit7,owned by group bandit6,33 bytes in size
+find / -type f -user bandit7 -group bandit6 -size 33c
+/var/lib/dpkg/info/bandit7.password was having the password
+bandit6@bandit:~$ cat /var/lib/dpkg/info/bandit7.password
+HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+
+# ssh bandit7@bandit.labs.overthewire.org -p 2220
+The password for the next level was stored in the file data.txt next to the word millionth.
+cat data.txt | grep millionth
+millionth cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+
+# ssh bandit8@bandit.labs.overthewire.org -p 2220
+The password for the next level was stored in the file data.txt and is the only line of text that occurs only once
+sort data.txt | uniq -u     //sort the lines alphabetically and removes all duplicates from the output.
+UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+
+# ssh bandit9@bandit.labs.overthewire.org -p 2220
+The password for the next level was stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters.
+cat data.txt | strings | grep ^=
+This returned 3 strings:
+========== password
+========== ism
+========== truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+The password is truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+
+# ssh bandit10@bandit.labs.overthewire.org -p 2220
+The password for the next level was stored in the file data.txt, which contains base64 encoded data
+cat data.txt | base64 --decode      //decodes the fie
+IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+
+# ssh bandit11@bandit.labs.overthewire.org -p 2220
+The password for the next level was stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
+cat data.txt | tr '[A-Za-z]' '[N-ZA-Mn-za-m]'       //replaces every letter by the letter 13 positions ahead
+5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+
+# ssh bandit12@bandit.labs.overthewire.org -p 2220
+The password for the next level was stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed.
