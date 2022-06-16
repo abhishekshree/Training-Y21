@@ -67,7 +67,7 @@ The password is truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
 
 # ssh bandit10@bandit.labs.overthewire.org -p 2220
 The password for the next level was stored in the file data.txt, which contains base64 encoded data
-cat data.txt | base64 --decode      //decodes the fie
+cat data.txt | base64 --decode      //decodes the file
 IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
 
 # ssh bandit11@bandit.labs.overthewire.org -p 2220
@@ -159,3 +159,4 @@ GbKksEFF4yrVs6il55v6gwY5aVje5f0j
 nc -l 1234 < /etc/bandit_pass/bandit20
 ./suconnect 1234
 gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+
