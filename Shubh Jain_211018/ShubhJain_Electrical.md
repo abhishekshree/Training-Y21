@@ -7,4 +7,5 @@ Temperature sensor
 https://www.tinkercad.com/things/atQAhgxE6IW-temperature-sensor/editel?sharecode=pjCaSBkmBhgpgK8pGxwuzT3G76Mg47ngfS1f43d3MAU
 
 7 segment display
-https://www.tinkercad.com/things/0W1LmmbAb0J-7-segment-display/editel?sharecode=aNimU6mxmF59nwf9rFclqSiWdutCgiBm4O6KuWtY-hw
+https://www.tinkercad.com/things/2sg24NHYln9-powerful-hillar-fulffy/editel?sharecode=CN9pIJ9z1qzVRIbtWDjy6nY7L3wPAPGhYvm6sJc81KU
+
