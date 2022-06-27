@@ -6,7 +6,7 @@
         Link- 
        
 ## Q3) Temperature Sensor using Arduino
-        Link-
+        Link- https://www.tinkercad.com/things/cDQnm7kzYtg?sharecode=kTADpdtdLWIww6rZufZs2phA-sC7n-dkOsg4qFMXZH0
         
 ## Q4) Servomotor using Arduino
         Link- https://www.tinkercad.com/things/1o1zKJagSch?sharecode=3e1ZG1RfjdTzoeWOYfOdYv18QyNTTD-SP4SYqkhPOD0
