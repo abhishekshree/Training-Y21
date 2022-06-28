@@ -3,7 +3,7 @@
         TinkerCAD account- saivedant26
 
 ## Q2) 4 bit-binary counter using 555 IC Timer
-        Link- 
+        Link- https://www.tinkercad.com/things/7FeM7QTRwY6?sharecode=EjBk69Y7H0CjLf20B7hjUuWcFeQdw0ymc8t-VyMKwYc
        
 ## Q3) Temperature Sensor using Arduino
         Link- https://www.tinkercad.com/things/cDQnm7kzYtg?sharecode=kTADpdtdLWIww6rZufZs2phA-sC7n-dkOsg4qFMXZH0
