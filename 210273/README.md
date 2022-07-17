@@ -22,6 +22,8 @@
 
 10) test the working of the nodes by opening new terminals and creating a underlay by the install setup bash command.
 
+11) use ros2 run math talker on one terminal and ros2 run math talker on another to see the working of the input and output nodes.
+
 
 
 
