@@ -27,4 +27,4 @@
 
 
 
-## was unable to make the server to take the inputs from the topics in the input node.
+
