@@ -1,0 +1,6 @@
+<launch>
+  <node name="random_num_generator" pkg="math_package" type="random_num.py" output="screen"/>
+  <node name="input_node" pkg="math_package" type="input_node.py" output="screen"/>
+  <node name="output_node" pkg="math_package" type="output_node.py" output="screen"/>
+  <node name="add_two_numbers_service" pkg="math_package" type="add_two_numbers_service.py" output="screen"/>
+</launch>
