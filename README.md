@@ -1,5 +1,9 @@
 # ROS
 
+## Content
+- [Assignment 1](#assignment-1)
+- [Assignment 2](#assignment-2)
+
 ## Assignment 1
 
 **Aim:** Understing nodes, topics, publishers, subscribers, and services.
@@ -71,7 +75,4 @@ c. Learn about Robot Modelling, explicitly URDF and XACRO.
 
 Useful Resources: 
 
-http://gazebosim.org/tutorials?tut=ros_roslaunch
-
-https://gazebosim.org/tutorials?tut=physics_params&cat=physics
-
+[Lauch files](http://gazebosim.org/tutorials?tut=ros_roslaunch), [Physics engine](https://gazebosim.org/tutorials?tut=physics_params&cat=physics)
