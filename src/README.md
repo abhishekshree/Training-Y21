@@ -11,7 +11,7 @@ HOW TO MOVE THE ROBOT
  **using msgs**
   
   1. the topic under which msgs are published is cmd/vel 
-  2. the type of msg is geometric_msgs/Twist
+  2. the type of msg is geometry_msgs/Twist
   3. use command rostopic pub /cmd_vel geometric_msgs/Twist "
     Linear:
     x : a
