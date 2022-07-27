@@ -8,7 +8,7 @@ HOW TO RUN
 HOW TO MOVE THE ROBOT
 ==
 
- using msgs
+ ##using msgs
    --
   1. the topic under which msgs are published is cmd/vel 
   2. the type of msg is geometric_msgs/Twist
@@ -22,8 +22,9 @@ HOW TO MOVE THE ROBOT
     y : e
     z : f
     " (here a b c d e f are numbers)
-  using teleop package
-  --
+    
+    **using the teleop_package**
+ 
     1.rosrun teleop_twist_keyboard teleop_twist_keyboard.py
     2.control through the keyboard.
     
