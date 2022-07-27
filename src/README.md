@@ -39,3 +39,6 @@ HOW I MADE IT
 6. for the robot i made a robot folder in package and in urdf folder I made a .xacro and .gazebo file
 7. I took resourced from internet for writing the file and also made a mesh file .dae for which i used resources online
 8. I edited the launch file to contain the robot and also made a robot_description.launch file for working of robots kinematics.
+
+
+LINK TO MY YOUTUBE VIDEO : https://www.youtube.com/watch?v=GWq3L1iNGMg
