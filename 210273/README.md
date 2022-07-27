@@ -2,30 +2,25 @@
 
 ## Assignment 1
 
-1) Created a directory dev_ws and a directory src inside it to create a workspace.
+1) Created and built a directory catkin_ws and a directory src inside it to create a workspace.
 
-2) Use colcon build to build the workspcace with.
+2)create a  package myrobot_gazebo and and directories worlds models and launch
 
-3)inside the src directory created a package with the name math with ros2 pkg create command 
+3) in the model directory createrd a .config and a .sdf file that describes the custom model.
 
-4)in the src of our workspcace we created another similar package called tutorial_interfaces.
+4) included the custom model and another model along with the sun model and the physics solver ODE
 
-5)in tutorial_interfaces created two directories msg and srv and created a .msg file and a .srv file respectively in them. This will be of help when we write the codes for the input,output node and the server. msg basically allows topics to publish int data and .srv file will allow the srver file to accept two ints and return its sum.
+5) Created a launch file that will launch the world file in the launch directory.
 
-6) updated the tutorial_interface dependencies in the CMakeLists.txt and the package.xml files.
+6) Found the robot Baxter on the internet and used its code in Baxter_description package
 
-7)now in the src of the math package i created three cpp files. publisher_member_function.cpp is the input node and has multiple topics through which it publishes two numbers, subscriber_member_function.cpp is the output node that subscribes to the topics of the input node and also publishes the sum of the two numbers in a fourth node, and the add_two_int_server which basically computes the sum of two numbers recieved from the topics of the input node.
+7) modified the launch file to find the Baxter Description package and spawn the robot along with the world.
 
-8) update the dependecies of the math package so it can use files from the package tutorial_interfaces.
+8) created the file baxter_gazebo_plugins.xacro in /baxter_description/urdf to include the differential drive plugin
 
-9)go back to dev_ws to build all the packages by colcon build.
+9)included the file in the main xacro file.
 
-10) test the working of the nodes by opening new terminals and creating a underlay by the install setup bash command.
-
-11) use ros2 run math talker on one terminal and ros2 run math talker on another to see the working of the input and output nodes.
-
-
-
+10) created a package baxter_simple_control and created a file baxter_teleop in it
 
 
 
