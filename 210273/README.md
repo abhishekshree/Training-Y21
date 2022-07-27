@@ -1,6 +1,6 @@
 # ROS
 
-## Assignment 1
+## Assignment 2
 
 1) Created and built a directory catkin_ws and a directory src inside it to create a workspace.
 
