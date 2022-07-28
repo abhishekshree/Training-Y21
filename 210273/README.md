@@ -22,6 +22,8 @@
 
 10) downloaded teleop twist package and used it to move the bot using the keyboard
 
+video link: https://youtu.be/dyVxJsUI5s4
+
 
 * myrobot_gazebo is the package that behaves as demo-gazebo in the workspace.
 
