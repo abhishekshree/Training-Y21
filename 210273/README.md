@@ -12,15 +12,18 @@
 
 5) Created a launch file that will launch the world file in the launch directory.
 
-6) Found the robot Baxter on the internet and used its code in Baxter_description package
+6) Found the robot m2wr on the internet and used its code in m2wr_description package
 
-7) modified the launch file to find the Baxter Description package and spawn the robot along with the world.
+7) copy pasted its code involving its launch files (spawn.launch mainly) and urdf files.
 
-8) created the file baxter_gazebo_plugins.xacro in /baxter_description/urdf to include the differential drive plugin
+8) updated the launch file in myrobot_gazebo to spawn the robot too.
 
-9)included the file in the main xacro file.
+9)used rostopic pub cmd to move the bot from the terminal.
 
-10) created a package baxter_simple_control and created a file baxter_teleop in it
+10)downloaded teleop twist package and used it to move the bot using the keyboard
+
+
+* myrobot_gazebo is the package that behaves as demo-gazebo in the workspace.
 
 
 

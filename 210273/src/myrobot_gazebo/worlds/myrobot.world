@@ -13,21 +13,21 @@
       </ode>
       <max_step_size>0.001</max_step_size>
     </physics>
-    <gravity>0.0 0.0 -9.81</gravity>
+    
     <include>
       <uri>model://ground_plane</uri>
     </include>
      <include>
       <uri>model://box</uri>
       <name>box</name>
-      <pose>0 -4 0 0 0 0</pose>
+      <pose>-2 -7 0 0 0 0</pose>
     </include>
     <include>
       <uri>model://sun</uri>
     </include>
      <include>
-      <uri>model://gas_station</uri>
-      <name>gas_station</name>
+      <uri>model://bus</uri>
+      
       <pose>-2.0 7.0 0 0 0 0</pose>
     </include>
      
