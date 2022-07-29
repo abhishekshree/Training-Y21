@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+    <physics type="ode">
+      <ode>
+        <solver>
+          <type>world</type>
+        </solver>
+        <constraints>
+          <contact_max_correcting_vel>0.1</contact_max_correcting_vel>
+          <contact_surface_layer>0.0001</contact_surface_layer>
+        </constraints>
+      </ode>
+      <max_step_size>0.001</max_step_size>
+    </physics>
+    
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+     <include>
+      <uri>model://box</uri>
+      <name>box</name>
+      <pose>-2 -7 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+     <include>
+      <uri>model://bus</uri>
+      
+      <pose>-2.0 7.0 0 0 0 0</pose>
+    </include>
+     
+    
+  </world>
+</sdf>
