@@ -1,0 +1,9 @@
+<launch>
+
+<rosparam file="$(find two-wheeled-robot_description)/launch/controller.yaml" command="load"/>
+<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="two-wheeled-robot" args="Rev1_position_controller Rev2_position_controller joint_state_controller "/>
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+  <remap from="/joint_states" to="/two-wheeled-robot/joint_states"/>
+</node>
+
+</launch>

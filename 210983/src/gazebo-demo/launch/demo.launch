@@ -1,0 +1,35 @@
+<launch>
+  <!-- adding model path -->
+  <env name="GAZEBO_MODEL_PATH" value="$(find gazebo-demo)/models"/>
+
+  <!-- adding gazebo variables -->
+  <arg name="paused" default="false"/>
+  <arg name="headless" default="false"/>
+  <arg name="gui" default="true"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="debug" default="false"/>
+  <arg name="extra_gazebo_args" default="--verbose"/>
+
+
+  <!-- Inserting gazebo variabbles-->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find gazebo-demo)/worlds/world1.world"/>
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="headless" value="$(arg headless)"/>
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="debug" value="$(arg debug)"/>
+    <arg name="extra_gazebo_args" value="$(arg extra_gazebo_args)"/>
+  </include>
+
+  <!-- Convert an xacro and put on parameter server -->
+  <param name="two-wheeled-robot_description" command="$(find xacro)/xacro $(find two-wheeled-robot_description)/urdf/two-wheeled-robot.xacro" />
+
+  <!-- Spawn a robot into Gazebo -->
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param two-wheeled-robot_description -urdf -model two-wheeled-robot" />
+  
+  <!-- <param name="two-wheeled-robot_description" textfile="$(find two-wheeled-robot_description)/urdf/two-wheeled-robot.urdf"/>
+
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-file $(find two-wheeled-robot_description)/urdf/two-wheeled-robot.urdf -urdf -model two-wheeled-robot" /> -->
+
+</launch> 

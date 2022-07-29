@@ -24,8 +24,8 @@ Essentially the folder structure will look like:
 
 Training-Y21
 ├── 200028
-│   ├── README.md
-│   └── src
+│   ├── README.md
+│   └── src
 └── README.md
 
 ```
