@@ -4,7 +4,7 @@ Assignment 2
 
 2. I created two pkg demo-gazebo and m2wr_description under src in simulation pkg .
 
-3. Under m2wr_description I created urdf folder and launch folder , I found the the code for m2wr_description on the  
+3. Under m2wr_description , I created urdf folder and launch folder , I found the the code for m2wr_description on the  
    internet( https://github.com/mattborghi/m2wr_description/tree/master/m2wr_description) and i used the code to create files in 
    urdf and launch folder .
    
