@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+
+<sdf version="1.5">
+	<world name="default">
+		<!-- A global light source -->
+		<include>
+			<uri>model://sun</uri>
+		</include>
+
+		<!-- A ground plane -->
+		<include>
+			<uri>model://ground_plane</uri>
+		</include>
+        <include>
+  <uri>model://pine_tree</uri>
+  <pose>2 1 0 0 0 0</pose>
+</include>
+<include>
+      <uri>model://box</uri>
+      <pose>-5 0 0 0 0 0</pose>
+    </include>
+	</world>
+</sdf>
